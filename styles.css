@@ -76,18 +76,305 @@ table {
 	height: auto;
   }
 
+
   header{
+	max-width: auto;
+	margin: 0 auto;
 	background-color: var(--Teal);
-	color: var(--Black);
-	padding: 1rem;
 	width: calc(100% - 2rem);
+	padding: 1rem;
+	display: grid;
+	grid-template-columns: 1fr 3fr 3fr;
   }
 
 
-  header div{
-	margin: 0 auto;
-	display:grid;
-	grid-template-columns:1fr 3fr;
-	grid-gap:0.5rem;
+  header p {
+	grid-column: 2;
+  }
+
+  
+
+  header img{
+	mix-blend-mode: multiply;
+  	filter: contrast(1);
+  }
+  
+ h1{
+	font-family: 'Molle';
+	font-weight: 400;
+	font-style:italic;
+	font-size: 3rem;
+ }
+
+ header p{
+	font-family: 'Montserrat';
+	font-weight: 100;
+	font-size: 1rem;
+ }
+
+
+  nav ul{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 0.15rem;
+  }
+
+  nav a{
+	text-decoration:none;
+  	text-align: center;
+  	padding: 1rem 1rem 1rem 1rem;
+	margin: 0rem;
+	background-color: var(--Yellow);
+	color: var(--Black);
+	font-family: 'Montserrat';
+	font-weight: 300;
+	font-size: 0.65rem;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 0.20rem;
+  }
+
+  .sr-only {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+  }
+
+  #toggle{
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+  }
+
+  header label{
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+  }
+
+  #intro h2{
+	font-family: 'Molle';
+	font-weight: 400;
+	font-style:italic;
+	font-size: 2rem;
+	padding: 1rem;
+  }
+
+  #intro p{
+	font-family: 'Montserrat';
+	font-size: 1rem;
+  }
+
+
+  #plan section {
+	background-color: var(--Teal);
+	border-radius: 0.5rem;
+	border:var(--White);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1.5rem;
+  }
+
+  #testimonials section{
+	display: flex;
+	flex-direction: column;
 	align-items: center;
   }
+
+  #about section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+
+  #plan div{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 5rem;
+	padding: 0rem 5rem 5rem 5rem;
+  }
+
+  #testimonials div{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	padding: 0rem 5rem 5rem 5rem;
+  }
+
+  #about div{
+	display: flex;
+	gap: 5rem;
+	padding:0rem 15rem 5rem 15rem;
+  }
+
+  #plan h4{
+	font-family: 'Montserrat';
+	font-weight: bold;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+  }
+
+  #testimonials h4{
+	font-family: 'Montserrat';
+	font-weight: bold;
+	font-size: 1.5rem;
+	text-align: center;
+	text-transform: uppercase;
+  }
+
+  #about h4{
+	font-family: 'Montserrat';
+	font-weight: bold;
+	font-size: 1.5rem;
+	text-align: center;
+	text-transform: uppercase;
+  }
+
+  #testimonials p{
+	font-family: 'Montserrat';
+	font-size: 1rem;
+  }
+
+  #about p{
+	font-family: 'Montserrat';
+	font-size: 1rem;
+  }
+
+  #testimonials q{
+	font-family: 'Montserrat';
+	font-size: 1rem;
+	font-style:italic;
+	text-align: center;
+  }
+
+  #plan h3{
+	font-family: 'Molle';
+	font-weight: 400;
+	font-style:italic;
+	font-size: 2rem;
+	padding: 1rem;
+  }
+
+  #testimonials h3{
+	font-family: 'Molle';
+	font-weight: 400;
+	font-style:italic;
+	font-size: 2rem;
+	padding: 1rem;
+  }
+
+  #about h3{
+	font-family: 'Molle';
+	font-weight: 400;
+	font-style:italic;
+	font-size: 2rem;
+	padding: 1rem;
+  }
+
+  #contact h3{
+	font-family: 'Molle';
+	font-weight: 400;
+	font-style:italic;
+	font-size: 2rem;
+	padding: 1rem;
+  }
+
+  .form-required{
+
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-size: 0.75rem;
+	font-weight: 100;
+	color: var(--DarkGray);
+  }
+
+  #plan{
+	background-color: var(--Yellow);
+	display: flex;
+	flex-direction: column;
+  }
+
+  #testimonials{
+	display: flex;
+	flex-direction: column;
+  }
+
+  #about {
+	background-color: var(--Blue);
+	display: flex;
+	flex-direction: column;
+	
+  }
+
+  #contact label{
+	font-family: 'Montserrat';
+	font-size: 1rem;
+	font-weight: 600;
+	text-transform: uppercase;
+  }
+
+  legend{
+	font-family: 'Montserrat';
+	font-size: 1rem;
+	text-transform: uppercase;
+	font-weight: 600;
+  }
+
+  .radio-label{
+	text-transform: none;
+	font-weight: 100;
+  }
+
+  .required{
+	color: var(--Purple);
+  }
+
+  #names, #nums,#selects{
+	display: flex;
+	flex-direction: column;
+  }
+
+  #fName, #lName, #email, #phone, #destination, #travelTime{
+	border-color: var(--Purple);
+	display: block;
+	padding: 0.5rem;
+  }
+
+  #mySubmit{
+	background-color: var(--Purple);
+	color: var(--White);
+	padding: 0.5rem;
+    border-radius: 0.25rem;
+	font-family: 'Montserrat';
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+
+footer{
+	display: flex;
+	padding: 0.5rem;
+	background-color: var(--Lightgray);
+
+}
+  
+footer p{
+	font-family: 'Montserrat';
+	font-size: 0.75rem;
+}
+
+footer a{
+	font-family: 'Montserrat';
+	font-size: 0.75rem;
+	text-decoration:none;
+	
+}
