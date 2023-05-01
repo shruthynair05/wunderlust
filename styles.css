@@ -1,4 +1,4 @@
-/* css by Shruthy Nair */
+/* CSS by Shruthy Nair */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -48,8 +48,10 @@ table {
 	border-spacing: 0;
 }
 
+/* ---------- Imported Montserrat Font ---------- */
 @import url("https://fonts.google.com/share?selection.family=Molle:ital@1%7CMontserrat ");
 
+/* ---------- VARIABLES ---------- */
 :root{
     --Yellow: #F6D64A;
     --Teal: #55BCD5;
@@ -61,6 +63,7 @@ table {
     --Black: #000000;
 }
 
+/* -------Screen Reader Section-------- */
 #skip{
 	position: absolute;
 	left: -10000px;
@@ -75,66 +78,7 @@ table {
 	width: auto;
 	height: auto;
   }
-
-
-  header{
-	max-width: auto;
-	margin: 0 auto;
-	background-color: var(--Teal);
-	width: calc(100% - 2rem);
-	padding: 1rem;
-	display: grid;
-	grid-template-columns: 1fr 3fr 3fr;
-  }
-
-
-  header p {
-	grid-column: 2;
-  }
-
   
-
-  header img{
-	mix-blend-mode: multiply;
-  	filter: contrast(1);
-  }
-  
- h1{
-	font-family: 'Molle';
-	font-weight: 400;
-	font-style:italic;
-	font-size: 3rem;
- }
-
- header p{
-	font-family: 'Montserrat';
-	font-weight: 100;
-	font-size: 1rem;
- }
-
-
-  nav ul{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	gap: 0.15rem;
-  }
-
-  nav a{
-	text-decoration:none;
-  	text-align: center;
-  	padding: 1rem 1rem 1rem 1rem;
-	margin: 0rem;
-	background-color: var(--Yellow);
-	color: var(--Black);
-	font-family: 'Montserrat';
-	font-weight: 300;
-	font-size: 0.65rem;
-	text-transform: uppercase;
-	text-align: center;
-	font-weight: bold;
-	border-radius: 0.20rem;
-  }
-
   .sr-only {
 	position: absolute;
 	left: -10000px;
@@ -144,7 +88,7 @@ table {
 	overflow: hidden;
   }
 
-  #toggle{
+   #toggle{
 	position: absolute;
 	left: -10000px;
 	top: auto;
@@ -160,9 +104,20 @@ table {
 	width: 1px;
 	height: 1px;
 	overflow: hidden;
-  }
+  } 
 
-  #intro h2{
+/* -------Headings ------------ */
+
+
+h1{
+	font-family: 'Molle';
+	font-weight: 400;
+	font-style:italic;
+	font-size: 3rem;
+	padding-top: 2rem;
+ }
+
+ h2{
 	font-family: 'Molle';
 	font-weight: 400;
 	font-style:italic;
@@ -170,84 +125,43 @@ table {
 	padding: 1rem;
   }
 
-  #intro p{
+  h3{
+	font-family: 'Molle';
+	font-weight: 400;
+	font-style:italic;
+	font-size: 2rem;
+	padding: 1rem;
+  }
+
+
+  h4{
+	font-family: 'Montserrat';
+	font-weight: bold;
+	font-size: 1.25rem;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 0.25rem;
+	padding-bottom: 0.5rem;
+  }
+
+/* ----- TEXT ----- */
+
+header p{
 	font-family: 'Montserrat';
 	font-size: 1rem;
-  }
+ }
 
-
-  #plan section {
-	background-color: var(--Teal);
-	border-radius: 0.5rem;
-	border:var(--White);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 1.5rem;
-  }
-
-  #testimonials section{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-  }
-
-  #about section{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-  }
-
-  #plan div{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	gap: 5rem;
-	padding: 0rem 5rem 5rem 5rem;
-  }
-
-  #testimonials div{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	padding: 0rem 5rem 5rem 5rem;
-  }
-
-  #about div{
-	display: flex;
-	gap: 5rem;
-	padding:0rem 15rem 5rem 15rem;
-  }
-
-  #plan h4{
+ #intro p{
 	font-family: 'Montserrat';
-	font-weight: bold;
-	font-size: 1.5rem;
-	text-transform: uppercase;
-  }
-
-  #testimonials h4{
-	font-family: 'Montserrat';
-	font-weight: bold;
-	font-size: 1.5rem;
-	text-align: center;
-	text-transform: uppercase;
-  }
-
-  #about h4{
-	font-family: 'Montserrat';
-	font-weight: bold;
-	font-size: 1.5rem;
-	text-align: center;
-	text-transform: uppercase;
+	font-size: 1rem;
+	padding: 1rem;
+	
   }
 
   #testimonials p{
 	font-family: 'Montserrat';
 	font-size: 1rem;
-  }
-
-  #about p{
-	font-family: 'Montserrat';
-	font-size: 1rem;
+	text-align: center;
   }
 
   #testimonials q{
@@ -257,37 +171,91 @@ table {
 	text-align: center;
   }
 
-  #plan h3{
-	font-family: 'Molle';
-	font-weight: 400;
-	font-style:italic;
-	font-size: 2rem;
-	padding: 1rem;
+  #about p{
+	font-family: 'Montserrat';
+	font-size: 1rem;
+	text-align: center;
   }
 
-  #testimonials h3{
-	font-family: 'Molle';
-	font-weight: 400;
-	font-style:italic;
-	font-size: 2rem;
-	padding: 1rem;
+/* ---------------Image------------------ */
+
+  header img{
+	mix-blend-mode: multiply;
+  	filter: contrast(1);
   }
 
-  #about h3{
-	font-family: 'Molle';
-	font-weight: 400;
-	font-style:italic;
-	font-size: 2rem;
-	padding: 1rem;
+ /* ------------------------------------- */
+
+ header{
+	max-width: 100%;
+	background: linear-gradient(0deg, #FFFFFF, #55BCD5);
+ }
+
+ nav a{
+	grid-column: 3;
+	grid-row: 1/2;
+	text-decoration:none;
+  	padding: 1rem 1rem 1rem 1rem;
+	margin: 0rem;
+	background-color: var(--Yellow);
+	color: var(--Black);
+	font-family: 'Montserrat';
+	font-size: 0.85rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 0.10rem;
+	margin-top: auto;
   }
 
-  #contact h3{
-	font-family: 'Molle';
-	font-weight: 400;
-	font-style:italic;
-	font-size: 2rem;
-	padding: 1rem;
+  nav ul{
+    display: flex;
+    gap: 1.5rem;
   }
+
+  /* --------Plan your trip Sections----------- */
+
+  #plan section {
+	background-color: var(--Teal);
+	border-radius: 0.5rem;
+	border: solid;
+	border-color: var(--White);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1.5rem;
+  }
+
+  #plan{
+	background-color: var(--Yellow);
+	padding: 5rem 5rem 5rem 5rem;
+  }
+
+  /* --------Testimonials Sections----------- */
+
+  #testimonials section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-left: 1rem;
+	padding-right: 1rem;
+  }
+  #testimonials{
+	padding: 5rem 5rem 5rem 5rem;
+  }
+
+  /* --------About your destination Sections----------- */
+  #about section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+
+  #about {
+	background-color: var(--Blue);
+	padding: 5rem 5rem 5rem 5rem;
+  }
+ 
+  /* --------Contact Us Section----------- */
 
   .form-required{
 
@@ -298,29 +266,12 @@ table {
 	color: var(--DarkGray);
   }
 
-  #plan{
-	background-color: var(--Yellow);
-	display: flex;
-	flex-direction: column;
-  }
-
-  #testimonials{
-	display: flex;
-	flex-direction: column;
-  }
-
-  #about {
-	background-color: var(--Blue);
-	display: flex;
-	flex-direction: column;
-	
-  }
-
   #contact label{
 	font-family: 'Montserrat';
 	font-size: 1rem;
 	font-weight: 600;
 	text-transform: uppercase;
+	padding-top: 1rem;
   }
 
   legend{
@@ -345,10 +296,101 @@ table {
   }
 
   #fName, #lName, #email, #phone, #destination, #travelTime{
+	border: solid;
 	border-color: var(--Purple);
 	display: block;
-	padding: 0.5rem;
+	padding: 1rem;
   }
+
+  .custom-select{
+	display: grid;
+	flex: 1;
+  }
+
+
+
+
+
+
+  .form-control {
+	font-family: 'Montserrat';
+	font-size: 1rem;
+	font-weight: bold;
+	line-height: 1.1;
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: 0.5rem;
+  }
+  
+  .form-control + .form-control {
+	margin-top: 1rem;
+  }
+  
+  .form-control:focus-within {
+	color: var(--Purple);
+  }
+  
+  input[type="radio"] {
+	/* Add if not using autoprefixer */
+	-webkit-appearance: none;
+	/* Remove most all native input styles */
+	appearance: none;
+	/* For iOS < 15 */
+	background-color: var(--White);
+	/* Not removed via appearance */
+	margin: 0;
+  
+	font: inherit;
+	color:currentColor;
+	width: 1.15em;
+	height: 1.15em;
+	border: 0.15em solid currentColor;
+	border-radius: 50%;
+	transform: translateY(-0.075em);
+  
+	display: grid;
+	place-content: center;
+  }
+  
+  input[type="radio"]::before {
+	content: "";
+	width: 0.65em;
+	height: 0.65em;
+	border-radius: 50%;
+	transform: scale(0);
+	transition: 120ms transform ease-in-out;
+	box-shadow: inset 1em 1em var(--Purple);
+  /* Windows High Contrast Mode */
+  background-color: var(--White);
+  }
+  
+  input[type="radio"]:checked::before {
+	transform: scale(1);
+  }
+  
+  input[type="radio"]:focus {
+	outline: max(2px, 0.15em) solid currentColor;
+	outline-offset: max(2px, 0.15em);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   #mySubmit{
 	background-color: var(--Purple);
@@ -358,23 +400,260 @@ table {
 	font-family: 'Montserrat';
 	font-size: 1rem;
 	text-transform: uppercase;
+	border: none;
 }
+
+/* --------Footer Section----------- */
 
 footer{
-	display: flex;
 	padding: 0.5rem;
 	background-color: var(--Lightgray);
-
+	padding: 1rem 1rem 1rem 1rem;
 }
-  
+
 footer p{
+
 	font-family: 'Montserrat';
 	font-size: 0.75rem;
 }
-
 footer a{
 	font-family: 'Montserrat';
 	font-size: 0.75rem;
 	text-decoration:none;
+}
+
+/* ---------- SMALL SCREEN STYLES ---------- */
+
+@media screen and (min-width:412px){
+
+	header{
+		background: linear-gradient(0deg, #FFFFFF, #55BCD5);
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	 nav ul{
+		grid-column: 2;
+	}
+
+	header p{
+		grid-column: 1;
+	}
+	
+	h1{
+		grid-column: 1;
+	} 
+
+	#intro{
+		display: grid;
+		padding: 1rem;
+	}
+	#intro p{
+		line-height: 1.5rem;
+	}
+
+	#img-grid picture{
+      width: 200px;
+
+    } 
+
+	#plan div{
+		display: grid;
+		gap: 1rem;
+	}
+
+	#testimonials div{
+		display: grid;
+		gap: 2rem;
+	  }
+	
+	  #about div{
+		display: grid;
+		gap: 2rem;
+	  }
+
+	  form{
+		padding: 1rem;
+		display: grid;
+		gap: 1rem;
+}
+
+footer{
+	padding: 1rem;
+	display: grid;
+	text-align: center;
+}
+
+}
+
+/* --------------- END SMALL SCREEN SIZES --------------- */
+
+
+
+/* ---------- MEDIUM SCREEN STYLES ---------- */
+/* --------------- BEGIN MEDIUM SCREEN SIZES --------------- */
+
+@media screen and (min-width:620px){
+
+	header{
+		background: linear-gradient(0deg, #FFFFFF, #55BCD5);
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	h1{
+		grid-column: 2;
+	} 
+	header p{
+		grid-column: 2;
+	}
+
+	nav ul{
+		gap: 1rem;
+		grid-column: 2;
+	}
+
+	#intro{
+		display: grid;
+		padding: 1rem;
+	}
+	#intro p{
+		line-height: 1.5rem;
+	}
+
+	#plan div{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
+	}
+
+	#testimonials div{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+	  }
+	
+	  #about div{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		gap: 2rem;
+	  }
+
+	  form{
+		padding: 1rem;
+		display: grid;
+		gap: 1rem;
+	}
+	#mySubmit{
+		width: 10rem;
+		margin-left: auto;
+	}
+
+footer{
+	padding: 1rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	text-align: center;
+}
+
+}
+
+/* --------------- END MEDIUM SCREEN SIZES --------------- */
+
+
+
+/* ---------- LARGE SCREEN STYLES ---------- */
+/* --------------- BEGIN LARGE SCREEN SIZES --------------- */
+
+@media screen and (min-width:1266px){
+
+	header{
+		background: linear-gradient(0deg, #FFFFFF, #55BCD5);
+		display: grid;
+		grid-template-columns: 1fr 3fr 3fr;
+		grid-gap: 0rem;
+	}
+
+	header p {
+		grid-column: 2;
+		padding-bottom: 0.5rem;
+		margin-top: auto;
+	  }
+
+
+	  #intro{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		vertical-align: middle;
+	  }
+	
+	  #intro p{
+		grid-column: 1;
+	  }
+	 
+	
+	
+	  #img-grid{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 0.5rem;
+		margin: 1rem;
+	  }
+	
+	  #img-grid picture{
+		grid-column: 1/-1;
+	  }
+
+	  #plan div{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		gap: 5rem;
+		
+	  }
+
+	  #testimonials div{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	  }
+
+	  #about div{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		gap: 2rem;
+	  }
+
+	  form{
+		padding: 1rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 1rem;
+	}
+
+	footer{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	footer a{
+		margin-left: auto;
+}
+
 	
 }
+
+/* --------------- END LARGE SCREEN SIZES --------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
