@@ -457,11 +457,16 @@ footer a{
 	  }
 
 
-	#img-grid img{
-       width: 500px;
-	   max-width: 500px;	
+	#img-grid {
+       width: 50px;
     } 
 
+	
+
+	#img-grid picture{
+		width: 50px;
+ 
+	 }
 
 	#plan div{
 		display: grid;
@@ -539,7 +544,6 @@ footer{
 		gap: 0.5rem;
 		margin: 1rem;
 	  }
-
 	#testimonials div{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
