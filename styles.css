@@ -422,7 +422,7 @@ footer a{
 
 /* ---------- SMALL SCREEN STYLES ---------- */
 
-@media screen and (min-width:412px){
+@media screen and (min-width:310px){
 
 	header{
 		background: linear-gradient(0deg, #FFFFFF, #55BCD5);
@@ -450,10 +450,18 @@ footer a{
 		line-height: 1.5rem;
 	}
 
-	#img-grid picture{
-      width: 200px;
+	#img-grid{
+		display: grid;
+		gap: 0.5rem;
+		margin: 1rem;
+	  }
 
+
+	#img-grid img{
+       width: 500px;
+	   max-width: 500px;	
     } 
+
 
 	#plan div{
 		display: grid;
@@ -524,6 +532,13 @@ footer{
 		grid-template-columns: 1fr 1fr;
 		gap: 1rem;
 	}
+
+	#img-grid{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 0.5rem;
+		margin: 1rem;
+	  }
 
 	#testimonials div{
 		display: grid;
