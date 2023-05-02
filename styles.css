@@ -654,6 +654,10 @@ footer{
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 
+	footer p{
+		margin-right: auto;
+	}
+
 	footer a{
 		margin-left: auto;
 }
